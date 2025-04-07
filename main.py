@@ -1,11 +1,15 @@
 import smtplib, ssl
 import sys
+import os
 from email.message import EmailMessage
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Dados do Gmail
-remetente = "qbittorrent9@gmail.com"
-senha_app = "apmz fqha iqrj juav"  # <-- Substitua pela sua senha de app
-destinatario = "levy.vix@gmail.com"
+remetente = os.getenv("SENDER")
+senha_app = os.getenv("PASSWORD")
+destinatario = os.getenv("RECEIVER")
 
 # Informações passadas pelo qBittorrent
 nome_arquivo = sys.argv[1] if len(sys.argv) > 1 else "Arquivo desconhecido"
