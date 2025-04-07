@@ -70,5 +70,5 @@ if __name__ == "__main__":
             logger.warning("No filename provided as argument")
             print("No file provided")
     except Exception as e:
-        logger.exception("Fatal error in main execution")
+        logger.exception(f"Fatal error in main execution: {str(e)}")
         sys.exit(1)
