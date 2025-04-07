@@ -1,0 +1,1662 @@
+2025-04-06 23:58:18 | WARNING | No filename provided as argument
+2025-04-06 23:58:57 | INFO | Preparing to send email for completed download: levy teste car
+2025-04-06 23:59:00 | SUCCESS | Email sent successfully for: levy teste car
+2025-04-07 00:09:32 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:09:32 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:09:32 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:09:32 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:09:32 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:09:33 | ERROR | SMTP Error while sending email: SMTP error occurred
+2025-04-07 00:09:33 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:09:33 | ERROR | Unexpected error while sending email: Unexpected error
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Scripts\pytest.exe\__main__.py", line 10, in <module>
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+           └ <function main at 0x000001EFD01504A0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+         │                │      │    │                          └ <_pytest.config.Config object at 0x000001EFD021B950>
+         │                │      │    └ <HookCaller 'pytest_cmdline_main'>
+         │                │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001EFD0429520>
+         │                └ <_pytest.config.Config object at 0x000001EFD021B950>
+         └ <enum 'ExitCode'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'config': <_pytest.config.Config object at 0x000001EFD021B950>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_cmdline_main'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_cmdline_main'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x000001EFD021B950>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x000001EFCFA3EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001EFCF5652E0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x000001EFD021B950>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 330, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x000001EFD01F5260>
+           │            └ <_pytest.config.Config object at 0x000001EFD021B950>
+           └ <function wrap_session at 0x000001EFD01F5120>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 283, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>
+    │       │            │    └ <_pytest.config.Config object at 0x000001EFD021B950>
+    │       │            └ <function _main at 0x000001EFD01F5260>
+    │       └ <ExitCode.OK: 0>
+    └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 337, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>
+    │      │    └ <HookCaller 'pytest_runtestloop'>
+    │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001EFD0429520>
+    └ <_pytest.config.Config object at 0x000001EFD021B950>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtestloop'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtestloop'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtestloop'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x000001EFCFA3EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001EFCF5652E0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 362, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ None
+    │    │                                        └ <Function test_send_email_unexpected_error>
+    │    └ <member 'config' of 'Node' objects>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_protocol'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_protocol'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x000001EFCFA3EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001EFCF5652E0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>, None]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 113, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ None
+    │               └ <Function test_send_email_unexpected_error>
+    └ <function runtestprotocol at 0x000001EFD01F4400>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 132, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <Function test_send_email_unexpected_error>
+    │       │      └ <function call_and_report at 0x000001EFD01F4860>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'test_email_sender.py::test_send_email_unexpected_error' when='setup' outcome='passed'>]
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 241, in call_and_report
+    call = CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x000001EFD01F4B80>)>
+           └ <class '_pytest.runner.CallInfo'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 341, in from_call
+    result: TResult | None = func()
+            │                └ <function call_and_report.<locals>.<lambda> at 0x000001EFD05832E0>
+            └ +TResult
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 242, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+            │                 │       └ {}
+            │                 └ <Function test_send_email_unexpected_error>
+            └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ False
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x000001EFCFA3EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001EFCF5652E0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x000001EFD0329E40>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 1627, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_send_email_unexpected_error>
+    │    └ <property object at 0x000001EFD015A250>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_pyfunc_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_pyfunc_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x000001EFCFA3EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001EFCF5652E0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'email_sender': <main.QBittorrentEmailSender object at 0x000001EFD2A14230>}
+             └ <function test_send_email_unexpected_error at 0x000001EFD20CE020>
+
+  File "C:\Users\enio\Desktop\email_qbit\test_email_sender.py", line 109, in test_send_email_unexpected_error
+    email_sender.send_email(filename)
+    │            │          └ 'test_file.txt'
+    │            └ <function QBittorrentEmailSender.send_email at 0x000001EFD20CDA80>
+    └ <main.QBittorrentEmailSender object at 0x000001EFD2A14230>
+
+> File "C:\Users\enio\Desktop\email_qbit\main.py", line 48, in send_email
+    server.send_message(message)
+    │                   └ <email.message.EmailMessage object at 0x000001EFD29795E0>
+    └ <MagicMock name='SMTP_SSL().__enter__()' id='2129542084032'>
+
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           │    │           │       └ {}
+           │    │           └ (<email.message.EmailMessage object at 0x000001EFD29795E0>,)
+           │    └ <function CallableMixin._mock_call at 0x000001EFD1FE5D00>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='2129542075584'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           │    │                   │       └ {}
+           │    │                   └ (<email.message.EmailMessage object at 0x000001EFD29795E0>,)
+           │    └ <function CallableMixin._execute_mock_call at 0x000001EFD1FE5E40>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='2129542075584'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+          └ Exception('Unexpected error')
+
+Exception: Unexpected error
+2025-04-07 00:10:35 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:10:35 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:10:36 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:10:36 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:10:36 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:10:36 | ERROR | SMTP Error while sending email: SMTP error occurred
+2025-04-07 00:10:36 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:10:36 | ERROR | Unexpected error while sending email: Unexpected error
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pytest\__main__.py", line 9, in <module>
+    raise SystemExit(pytest.console_main())
+                     │      └ <function console_main at 0x000001B24EC104A0>
+                     └ <module 'pytest' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-packages\\pytest\\__init__.py'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+           └ <function main at 0x000001B24EC10400>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+         │                │      │    │                          └ <_pytest.config.Config object at 0x000001B24EB29AF0>
+         │                │      │    └ <HookCaller 'pytest_cmdline_main'>
+         │                │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001B24EEA1790>
+         │                └ <_pytest.config.Config object at 0x000001B24EB29AF0>
+         └ <enum 'ExitCode'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'config': <_pytest.config.Config object at 0x000001B24EB29AF0>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_cmdline_main'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_cmdline_main'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x000001B24EB29AF0>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x000001B24E4FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001B24E027E90>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x000001B24EB29AF0>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 330, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x000001B24EC911C0>
+           │            └ <_pytest.config.Config object at 0x000001B24EB29AF0>
+           └ <function wrap_session at 0x000001B24EC91080>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 283, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>
+    │       │            │    └ <_pytest.config.Config object at 0x000001B24EB29AF0>
+    │       │            └ <function _main at 0x000001B24EC911C0>
+    │       └ <ExitCode.OK: 0>
+    └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 337, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>
+    │      │    └ <HookCaller 'pytest_runtestloop'>
+    │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001B24EEA1790>
+    └ <_pytest.config.Config object at 0x000001B24EB29AF0>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtestloop'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtestloop'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtestloop'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x000001B24E4FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001B24E027E90>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session  exitstatus=<ExitCode.OK: 0> testsfailed=5 testscollected=8>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 362, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ None
+    │    │                                        └ <Function test_send_email_unexpected_error>
+    │    └ <member 'config' of 'Node' objects>
+    └ <Function test_send_email_unexpected_error>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_protocol'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_protocol'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x000001B24E4FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001B24E027E90>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>, None]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 113, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ None
+    │               └ <Function test_send_email_unexpected_error>
+    └ <function runtestprotocol at 0x000001B24EC90360>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 132, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <Function test_send_email_unexpected_error>
+    │       │      └ <function call_and_report at 0x000001B24EC907C0>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'test_email_sender.py::test_send_email_unexpected_error' when='setup' outcome='passed'>]
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 241, in call_and_report
+    call = CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x000001B24EC90AE0>)>
+           └ <class '_pytest.runner.CallInfo'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 341, in from_call
+    result: TResult | None = func()
+            │                └ <function call_and_report.<locals>.<lambda> at 0x000001B24EFFAAC0>
+            └ +TResult
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 242, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+            │                 │       └ {}
+            │                 └ <Function test_send_email_unexpected_error>
+            └ <HookCaller 'pytest_runtest_call'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ False
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_call'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x000001B24E4FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001B24E027E90>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x000001B24EDC5DA0>
+    └ <Function test_send_email_unexpected_error>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 1627, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_send_email_unexpected_error>
+    │    └ <property object at 0x000001B24EC16390>
+    └ <Function test_send_email_unexpected_error>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_pyfunc_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_pyfunc_call'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x000001B24E4FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001B24E027E90>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'email_sender': <main.QBittorrentEmailSender object at 0x000001B250B7C770>}
+             └ <function test_send_email_unexpected_error at 0x000001B250B81C60>
+
+  File "C:\Users\enio\Desktop\email_qbit\test_email_sender.py", line 109, in test_send_email_unexpected_error
+    email_sender.send_email(filename)
+    │            │          └ 'test_file.txt'
+    │            └ <function QBittorrentEmailSender.send_email at 0x000001B250B816C0>
+    └ <main.QBittorrentEmailSender object at 0x000001B250B7C770>
+
+> File "c:\Users\enio\Desktop\email_qbit\main.py", line 48, in send_email
+    server.send_message(message)
+    │                   └ <email.message.EmailMessage object at 0x000001B2514A4A40>
+    └ <MagicMock name='SMTP_SSL().__enter__()' id='1865379614352'>
+
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           │    │           │       └ {}
+           │    │           └ (<email.message.EmailMessage object at 0x000001B2514A4A40>,)
+           │    └ <function CallableMixin._mock_call at 0x000001B250A99940>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1865379625776'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           │    │                   │       └ {}
+           │    │                   └ (<email.message.EmailMessage object at 0x000001B2514A4A40>,)
+           │    └ <function CallableMixin._execute_mock_call at 0x000001B250A99A80>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1865379625776'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+          └ Exception('Unexpected error')
+
+Exception: Unexpected error
+2025-04-07 00:10:44 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:10:44 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:10:47 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:10:47 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:12:19 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:12:19 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:12:54 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:12:54 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:14:05 | WARNING | No filename provided as argument
+2025-04-07 00:14:19 | INFO | Preparing to send email for completed download: levi
+2025-04-07 00:14:22 | SUCCESS | Email sent successfully for: levi
+2025-04-07 00:14:43 | ERROR | Fatal error in main execution
+Traceback (most recent call last):
+
+> File "c:\Users\enio\Desktop\email_qbit\main.py", line 65, in <module>
+    sender = QBittorrentEmailSender()
+             └ <class '__main__.QBittorrentEmailSender'>
+
+  File "c:\Users\enio\Desktop\email_qbit\main.py", line 30, in __init__
+    raise ValueError("Missing required environment variables. Please check your .env file.")
+
+ValueError: Missing required environment variables. Please check your .env file.
+2025-04-07 00:14:58 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:14:58 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:16:26 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:16:26 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:16:50 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:16:50 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:19:46 | ERROR | Fatal error in main execution
+Traceback (most recent call last):
+
+> File "c:\Users\enio\Desktop\email_qbit\main.py", line 67, in <module>
+    sender = QBittorrentEmailSender()
+             └ <class '__main__.QBittorrentEmailSender'>
+
+  File "c:\Users\enio\Desktop\email_qbit\main.py", line 32, in __init__
+    raise ValueError("Missing required environment variables. Please check your .env file.")
+
+ValueError: Missing required environment variables. Please check your .env file.
+2025-04-07 00:30:02 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:02 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:30:02 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:02 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:30:02 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:02 | ERROR | SMTP Error while sending email: SMTP error occurred
+2025-04-07 00:30:02 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:02 | ERROR | Unexpected error while sending email: Unexpected error
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pytest\__main__.py", line 9, in <module>
+    raise SystemExit(pytest.console_main())
+                     │      └ <function console_main at 0x000001C1746204A0>
+                     └ <module 'pytest' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-packages\\pytest\\__init__.py'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+           └ <function main at 0x000001C174620400>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+         │                │      │    │                          └ <_pytest.config.Config object at 0x000001C173C2C230>
+         │                │      │    └ <HookCaller 'pytest_cmdline_main'>
+         │                │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001C1747DDAC0>
+         │                └ <_pytest.config.Config object at 0x000001C173C2C230>
+         └ <enum 'ExitCode'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'config': <_pytest.config.Config object at 0x000001C173C2C230>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_cmdline_main'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_cmdline_main'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x000001C173C2C230>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x000001C173F0EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001C1747A3E30>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x000001C173C2C230>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 330, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x000001C1746A51C0>
+           │            └ <_pytest.config.Config object at 0x000001C173C2C230>
+           └ <function wrap_session at 0x000001C1746A5080>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 283, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │       │            │    └ <_pytest.config.Config object at 0x000001C173C2C230>
+    │       │            └ <function _main at 0x000001C1746A51C0>
+    │       └ <ExitCode.OK: 0>
+    └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 337, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │      │    └ <HookCaller 'pytest_runtestloop'>
+    │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001C1747DDAC0>
+    └ <_pytest.config.Config object at 0x000001C173C2C230>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtestloop'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtestloop'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtestloop'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x000001C173F0EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001C1747A3E30>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 362, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ None
+    │    │                                        └ <Function test_send_email_unexpected_error>
+    │    └ <member 'config' of 'Node' objects>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_protocol'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_protocol'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x000001C173F0EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001C1747A3E30>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>, None]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 113, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ None
+    │               └ <Function test_send_email_unexpected_error>
+    └ <function runtestprotocol at 0x000001C1746A4360>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 132, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <Function test_send_email_unexpected_error>
+    │       │      └ <function call_and_report at 0x000001C1746A47C0>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'test_email_sender.py::test_send_email_unexpected_error' when='setup' outcome='passed'>]
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 241, in call_and_report
+    call = CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x000001C1746A4AE0>)>
+           └ <class '_pytest.runner.CallInfo'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 341, in from_call
+    result: TResult | None = func()
+            │                └ <function call_and_report.<locals>.<lambda> at 0x000001C176502CA0>
+            └ +TResult
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 242, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+            │                 │       └ {}
+            │                 └ <Function test_send_email_unexpected_error>
+            └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ False
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x000001C173F0EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001C1747A3E30>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x000001C1747D9DA0>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 1627, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_send_email_unexpected_error>
+    │    └ <property object at 0x000001C17462A250>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_pyfunc_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_pyfunc_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x000001C173F0EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001C1747A3E30>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'email_sender': <main.QBittorrentEmailSender object at 0x000001C176DD10A0>, 'capsys': <_pytest.capture.CaptureFixture object...
+             └ <function test_send_email_unexpected_error at 0x000001C176501DA0>
+
+  File "c:\Users\enio\Desktop\email_qbit\test_email_sender.py", line 134, in test_send_email_unexpected_error
+    email_sender.send_email(filename)
+    │            │          └ 'test_file.txt'
+    │            └ <function QBittorrentEmailSender.send_email at 0x000001C176501580>
+    └ <main.QBittorrentEmailSender object at 0x000001C176DD10A0>
+
+> File "C:\Users\enio\Desktop\email_qbit\main.py", line 50, in send_email
+    server.send_message(message)
+    │                   └ <email.message.EmailMessage object at 0x000001C176DDDEB0>
+    └ <MagicMock name='SMTP_SSL().__enter__()' id='1930434519856'>
+
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           │    │           │       └ {}
+           │    │           └ (<email.message.EmailMessage object at 0x000001C176DDDEB0>,)
+           │    └ <function CallableMixin._mock_call at 0x000001C1763FD800>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1930434564064'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           │    │                   │       └ {}
+           │    │                   └ (<email.message.EmailMessage object at 0x000001C176DDDEB0>,)
+           │    └ <function CallableMixin._execute_mock_call at 0x000001C1763FD940>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1930434564064'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+          └ Exception('Unexpected error')
+
+Exception: Unexpected error
+2025-04-07 00:30:26 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:26 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:30:26 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:26 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:30:26 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:26 | ERROR | SMTP Error while sending email: SMTP error occurred
+2025-04-07 00:30:26 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:26 | ERROR | Unexpected error while sending email: Unexpected error
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Scripts\pytest.exe\__main__.py", line 10, in <module>
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+           └ <function main at 0x000001AE9B1704A0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+         │                │      │    │                          └ <_pytest.config.Config object at 0x000001AE9A237920>
+         │                │      │    └ <HookCaller 'pytest_cmdline_main'>
+         │                │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001AE9ABFE7B0>
+         │                └ <_pytest.config.Config object at 0x000001AE9A237920>
+         └ <enum 'ExitCode'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'config': <_pytest.config.Config object at 0x000001AE9A237920>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_cmdline_main'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_cmdline_main'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x000001AE9A237920>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x000001AE9A9FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001AE9A521340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x000001AE9A237920>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 330, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x000001AE9B215260>
+           │            └ <_pytest.config.Config object at 0x000001AE9A237920>
+           └ <function wrap_session at 0x000001AE9B215120>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 283, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │       │            │    └ <_pytest.config.Config object at 0x000001AE9A237920>
+    │       │            └ <function _main at 0x000001AE9B215260>
+    │       └ <ExitCode.OK: 0>
+    └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 337, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │      │    └ <HookCaller 'pytest_runtestloop'>
+    │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000001AE9ABFE7B0>
+    └ <_pytest.config.Config object at 0x000001AE9A237920>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtestloop'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtestloop'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtestloop'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x000001AE9A9FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001AE9A521340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 362, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ None
+    │    │                                        └ <Function test_send_email_unexpected_error>
+    │    └ <member 'config' of 'Node' objects>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_protocol'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_protocol'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x000001AE9A9FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001AE9A521340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>, None]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 113, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ None
+    │               └ <Function test_send_email_unexpected_error>
+    └ <function runtestprotocol at 0x000001AE9B214400>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 132, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <Function test_send_email_unexpected_error>
+    │       │      └ <function call_and_report at 0x000001AE9B214860>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'tests/test_email_sender.py::test_send_email_unexpected_error' when='setup' outcome='passed'>]
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 241, in call_and_report
+    call = CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x000001AE9B214B80>)>
+           └ <class '_pytest.runner.CallInfo'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 341, in from_call
+    result: TResult | None = func()
+            │                └ <function call_and_report.<locals>.<lambda> at 0x000001AE9D142FC0>
+            └ +TResult
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 242, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+            │                 │       └ {}
+            │                 └ <Function test_send_email_unexpected_error>
+            └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ False
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x000001AE9A9FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001AE9A521340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x000001AE9B349E40>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 1627, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_send_email_unexpected_error>
+    │    └ <property object at 0x000001AE9B17A200>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_pyfunc_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_pyfunc_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x000001AE9A9FEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000001AE9A521340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'email_sender': <main.QBittorrentEmailSender object at 0x000001AE9DA1CA40>, 'capsys': <_pytest.capture.CaptureFixture object...
+             └ <function test_send_email_unexpected_error at 0x000001AE9D142160>
+
+  File "c:\Users\enio\Desktop\email_qbit\tests\test_email_sender.py", line 134, in test_send_email_unexpected_error
+    email_sender.send_email(filename)
+    │            │          └ 'test_file.txt'
+    │            └ <function QBittorrentEmailSender.send_email at 0x000001AE9D141940>
+    └ <main.QBittorrentEmailSender object at 0x000001AE9DA1CA40>
+
+> File "C:\Users\enio\Desktop\email_qbit\main.py", line 50, in send_email
+    server.send_message(message)
+    │                   └ <email.message.EmailMessage object at 0x000001AE9DA21880>
+    └ <MagicMock name='SMTP_SSL().__enter__()' id='1849480568016'>
+
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           │    │           │       └ {}
+           │    │           └ (<email.message.EmailMessage object at 0x000001AE9DA21880>,)
+           │    └ <function CallableMixin._mock_call at 0x000001AE9D05DBC0>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1849480579504'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           │    │                   │       └ {}
+           │    │                   └ (<email.message.EmailMessage object at 0x000001AE9DA21880>,)
+           │    └ <function CallableMixin._execute_mock_call at 0x000001AE9D05DD00>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1849480579504'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+          └ Exception('Unexpected error')
+
+Exception: Unexpected error
+2025-04-07 00:30:35 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:35 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:30:35 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:35 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:30:35 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:35 | ERROR | SMTP Error while sending email: SMTP error occurred
+2025-04-07 00:30:35 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:30:35 | ERROR | Unexpected error while sending email: Unexpected error
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Scripts\pytest.exe\__main__.py", line 10, in <module>
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+           └ <function main at 0x000002B2574704A0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+         │                │      │    │                          └ <_pytest.config.Config object at 0x000002B256597920>
+         │                │      │    └ <HookCaller 'pytest_cmdline_main'>
+         │                │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000002B256EFE7B0>
+         │                └ <_pytest.config.Config object at 0x000002B256597920>
+         └ <enum 'ExitCode'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'config': <_pytest.config.Config object at 0x000002B256597920>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_cmdline_main'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_cmdline_main'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x000002B256597920>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x000002B256D4EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000002B256871340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x000002B256597920>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 330, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x000002B257515260>
+           │            └ <_pytest.config.Config object at 0x000002B256597920>
+           └ <function wrap_session at 0x000002B257515120>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 283, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │       │            │    └ <_pytest.config.Config object at 0x000002B256597920>
+    │       │            └ <function _main at 0x000002B257515260>
+    │       └ <ExitCode.OK: 0>
+    └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 337, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │      │    └ <HookCaller 'pytest_runtestloop'>
+    │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000002B256EFE7B0>
+    └ <_pytest.config.Config object at 0x000002B256597920>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtestloop'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtestloop'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtestloop'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x000002B256D4EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000002B256871340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 362, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ None
+    │    │                                        └ <Function test_send_email_unexpected_error>
+    │    └ <member 'config' of 'Node' objects>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_protocol'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_protocol'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x000002B256D4EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000002B256871340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>, None]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 113, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ None
+    │               └ <Function test_send_email_unexpected_error>
+    └ <function runtestprotocol at 0x000002B257514400>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 132, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <Function test_send_email_unexpected_error>
+    │       │      └ <function call_and_report at 0x000002B257514860>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'tests/test_email_sender.py::test_send_email_unexpected_error' when='setup' outcome='passed'>]
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 241, in call_and_report
+    call = CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x000002B257514B80>)>
+           └ <class '_pytest.runner.CallInfo'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 341, in from_call
+    result: TResult | None = func()
+            │                └ <function call_and_report.<locals>.<lambda> at 0x000002B2593C2CA0>
+            └ +TResult
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 242, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+            │                 │       └ {}
+            │                 └ <Function test_send_email_unexpected_error>
+            └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ False
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x000002B256D4EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000002B256871340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x000002B257649E40>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 1627, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_send_email_unexpected_error>
+    │    └ <property object at 0x000002B25747A200>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_pyfunc_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_pyfunc_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x000002B256D4EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x000002B256871340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'email_sender': <main.QBittorrentEmailSender object at 0x000002B259C986B0>, 'capsys': <_pytest.capture.CaptureFixture object...
+             └ <function test_send_email_unexpected_error at 0x000002B2593C2160>
+
+  File "c:\Users\enio\Desktop\email_qbit\tests\test_email_sender.py", line 134, in test_send_email_unexpected_error
+    email_sender.send_email(filename)
+    │            │          └ 'test_file.txt'
+    │            └ <function QBittorrentEmailSender.send_email at 0x000002B2593C1940>
+    └ <main.QBittorrentEmailSender object at 0x000002B259C986B0>
+
+> File "C:\Users\enio\Desktop\email_qbit\main.py", line 50, in send_email
+    server.send_message(message)
+    │                   └ <email.message.EmailMessage object at 0x000002B259C9D4F0>
+    └ <MagicMock name='SMTP_SSL().__enter__()' id='2965033818432'>
+
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           │    │           │       └ {}
+           │    │           └ (<email.message.EmailMessage object at 0x000002B259C9D4F0>,)
+           │    └ <function CallableMixin._mock_call at 0x000002B2592DDBC0>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='2965033829920'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           │    │                   │       └ {}
+           │    │                   └ (<email.message.EmailMessage object at 0x000002B259C9D4F0>,)
+           │    └ <function CallableMixin._execute_mock_call at 0x000002B2592DDD00>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='2965033829920'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+          └ Exception('Unexpected error')
+
+Exception: Unexpected error
+2025-04-07 00:31:19 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:31:19 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:31:19 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:31:19 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:31:19 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:31:19 | ERROR | SMTP Error while sending email: SMTP error occurred
+2025-04-07 00:31:19 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:31:19 | ERROR | Unexpected error while sending email: Unexpected error
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Scripts\pytest.exe\__main__.py", line 10, in <module>
+
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+           └ <function main at 0x0000023738BB04A0>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+         │                │      │    │                          └ <_pytest.config.Config object at 0x0000023737CE7920>
+         │                │      │    └ <HookCaller 'pytest_cmdline_main'>
+         │                │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000002373863E7B0>
+         │                └ <_pytest.config.Config object at 0x0000023737CE7920>
+         └ <enum 'ExitCode'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'config': <_pytest.config.Config object at 0x0000023737CE7920>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_cmdline_main'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_cmdline_main'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x0000023737CE7920>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x000002373849EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000023737FC1340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x0000023737CE7920>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 330, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x0000023738C55260>
+           │            └ <_pytest.config.Config object at 0x0000023737CE7920>
+           └ <function wrap_session at 0x0000023738C55120>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 283, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │       │            │    └ <_pytest.config.Config object at 0x0000023737CE7920>
+    │       │            └ <function _main at 0x0000023738C55260>
+    │       └ <ExitCode.OK: 0>
+    └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 337, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>
+    │      │    └ <HookCaller 'pytest_runtestloop'>
+    │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x000002373863E7B0>
+    └ <_pytest.config.Config object at 0x0000023737CE7920>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtestloop'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtestloop'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtestloop'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x000002373849EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000023737FC1340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=8>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 362, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ None
+    │    │                                        └ <Function test_send_email_unexpected_error>
+    │    └ <member 'config' of 'Node' objects>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_protocol'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_protocol'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x000002373849EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000023737FC1340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>, None]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 113, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ None
+    │               └ <Function test_send_email_unexpected_error>
+    └ <function runtestprotocol at 0x0000023738C54400>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 132, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <Function test_send_email_unexpected_error>
+    │       │      └ <function call_and_report at 0x0000023738C54860>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'tests/test_email_sender.py::test_send_email_unexpected_error' when='setup' outcome='passed'>]
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 241, in call_and_report
+    call = CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x0000023738C54B80>)>
+           └ <class '_pytest.runner.CallInfo'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 341, in from_call
+    result: TResult | None = func()
+            │                └ <function call_and_report.<locals>.<lambda> at 0x000002373AACEF20>
+            └ +TResult
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 242, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+            │                 │       └ {}
+            │                 └ <Function test_send_email_unexpected_error>
+            └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ False
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x000002373849EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000023737FC1340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x0000023738D89E40>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 1627, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_send_email_unexpected_error>
+    │    └ <property object at 0x0000023738BBA200>
+    └ <Function test_send_email_unexpected_error>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_pyfunc_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_pyfunc_call'>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x000002373849EFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000023737FC1340>
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'C:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "C:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'email_sender': <main.QBittorrentEmailSender object at 0x000002373AAE8080>, 'capsys': <_pytest.capture.CaptureFixture object...
+             └ <function test_send_email_unexpected_error at 0x000002373AACE020>
+
+  File "c:\Users\enio\Desktop\email_qbit\tests\test_email_sender.py", line 123, in test_send_email_unexpected_error
+    email_sender.send_email(filename)
+    │            │          └ 'test_file.txt'
+    │            └ <function QBittorrentEmailSender.send_email at 0x000002373AACDA80>
+    └ <main.QBittorrentEmailSender object at 0x000002373AAE8080>
+
+> File "C:\Users\enio\Desktop\email_qbit\main.py", line 50, in send_email
+    server.send_message(message)
+    │                   └ <email.message.EmailMessage object at 0x000002373B3A5520>
+    └ <MagicMock name='SMTP_SSL().__enter__()' id='2436240071072'>
+
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           │    │           │       └ {}
+           │    │           └ (<email.message.EmailMessage object at 0x000002373B3A5520>,)
+           │    └ <function CallableMixin._mock_call at 0x000002373A9CDD00>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='2436240131664'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           │    │                   │       └ {}
+           │    │                   └ (<email.message.EmailMessage object at 0x000002373B3A5520>,)
+           │    └ <function CallableMixin._execute_mock_call at 0x000002373A9CDE40>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='2436240131664'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+          └ Exception('Unexpected error')
+
+Exception: Unexpected error
+2025-04-07 00:31:39 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:31:39 | SUCCESS | Email sent successfully for: test_file.txt
+2025-04-07 00:32:52 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:32:52 | ERROR | SMTP Authentication Error: (535, 'Authentication failed')
+2025-04-07 00:32:53 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:32:53 | ERROR | SMTP Error while sending email: SMTP error occurred
+2025-04-07 00:32:55 | INFO | Preparing to send email for completed download: test_file.txt
+2025-04-07 00:32:55 | ERROR | Unexpected error while sending email: Unexpected error
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pytest\__main__.py", line 9, in <module>
+    raise SystemExit(pytest.console_main())
+                     │      └ <function console_main at 0x0000016E893004A0>
+                     └ <module 'pytest' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-packages\\pytest\\__init__.py'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+           └ <function main at 0x0000016E89300400>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+         │                │      │    │                          └ <_pytest.config.Config object at 0x0000016E8944D9A0>
+         │                │      │    └ <HookCaller 'pytest_cmdline_main'>
+         │                │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x0000016E895D18B0>
+         │                └ <_pytest.config.Config object at 0x0000016E8944D9A0>
+         └ <enum 'ExitCode'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'config': <_pytest.config.Config object at 0x0000016E8944D9A0>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_cmdline_main'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_cmdline_main'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x0000016E8944D9A0>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x0000016E88BBEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000016E886E6510>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x0000016E8944D9A0>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 330, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x0000016E893A11C0>
+           │            └ <_pytest.config.Config object at 0x0000016E8944D9A0>
+           └ <function wrap_session at 0x0000016E893A1080>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 283, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>
+    │       │            │    └ <_pytest.config.Config object at 0x0000016E8944D9A0>
+    │       │            └ <function _main at 0x0000016E893A11C0>
+    │       └ <ExitCode.OK: 0>
+    └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 337, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>
+    │      │    └ <HookCaller 'pytest_runtestloop'>
+    │      └ <_pytest.config.compat.PathAwareHookProxy object at 0x0000016E895D18B0>
+    └ <_pytest.config.Config object at 0x0000016E8944D9A0>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtestloop'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtestloop'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtestloop'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pac...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x0000016E88BBEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000016E886E6510>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-pack...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\main.py", line 362, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ None
+    │    │                                        └ <Function test_send_email_unexpected_error>
+    │    └ <member 'config' of 'Node' objects>
+    └ <Function test_send_email_unexpected_error>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_protocol'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_protocol'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>, 'nextitem': None}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x0000016E88BBEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000016E886E6510>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>, None]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 113, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ None
+    │               └ <Function test_send_email_unexpected_error>
+    └ <function runtestprotocol at 0x0000016E893A0360>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 132, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <Function test_send_email_unexpected_error>
+    │       │      └ <function call_and_report at 0x0000016E893A07C0>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'tests/test_email_sender.py::test_send_email_unexpected_error' when='setup' outcome='passed'>]
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 241, in call_and_report
+    call = CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x0000016E893A0AE0>)>
+           └ <class '_pytest.runner.CallInfo'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 341, in from_call
+    result: TResult | None = func()
+            │                └ <function call_and_report.<locals>.<lambda> at 0x0000016E8B286520>
+            └ +TResult
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 242, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+            │                 │       └ {}
+            │                 └ <Function test_send_email_unexpected_error>
+            └ <HookCaller 'pytest_runtest_call'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ False
+           │    │         │    │     │    │                  └ {'item': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_runtest_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_runtest_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_runtest_call'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x0000016E88BBEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000016E886E6510>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x0000016E894D5DA0>
+    └ <Function test_send_email_unexpected_error>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 1627, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_send_email_unexpected_error>
+    │    └ <property object at 0x0000016E89306390>
+    └ <Function test_send_email_unexpected_error>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           │    │         │    │     │    │                  │       └ True
+           │    │         │    │     │    │                  └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │         │    │     │    └ <member '_hookimpls' of 'HookCaller' objects>
+           │    │         │    │     └ <HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ <member 'name' of 'HookCaller' objects>
+           │    │         └ <HookCaller 'pytest_pyfunc_call'>
+           │    └ <member '_hookexec' of 'HookCaller' objects>
+           └ <HookCaller 'pytest_pyfunc_call'>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_send_email_unexpected_error>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x0000016E88BBEFC0>
+           └ <_pytest.config.PytestPluginManager object at 0x0000016E886E6510>
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_send_email_unexpected_error>]
+          │         └ <member 'function' of 'HookImpl' objects>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from 'c:\\Users\\enio\\Desktop\\email_qbit\\.venv\\Lib\\site-...
+  File "c:\Users\enio\Desktop\email_qbit\.venv\Lib\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'email_sender': <main.QBittorrentEmailSender object at 0x0000016E8B27D760>}
+             └ <function test_send_email_unexpected_error at 0x0000016E8B285EE0>
+
+  File "c:\Users\enio\Desktop\email_qbit\tests\test_email_sender.py", line 114, in test_send_email_unexpected_error
+    email_sender.send_email(filename)
+    │            │          └ 'test_file.txt'
+    │            └ <function QBittorrentEmailSender.send_email at 0x0000016E8B285940>
+    └ <main.QBittorrentEmailSender object at 0x0000016E8B27D760>
+
+> File "c:\Users\enio\Desktop\email_qbit\main.py", line 50, in send_email
+    server.send_message(message)
+    │                   └ <email.message.EmailMessage object at 0x0000016E8B295AC0>
+    └ <MagicMock name='SMTP_SSL().__enter__()' id='1574263491664'>
+
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           │    │           │       └ {}
+           │    │           └ (<email.message.EmailMessage object at 0x0000016E8B295AC0>,)
+           │    └ <function CallableMixin._mock_call at 0x0000016E8B195BC0>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1574291938704'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           │    │                   │       └ {}
+           │    │                   └ (<email.message.EmailMessage object at 0x0000016E8B295AC0>,)
+           │    └ <function CallableMixin._execute_mock_call at 0x0000016E8B195D00>
+           └ <MagicMock name='SMTP_SSL().__enter__().send_message' id='1574291938704'>
+  File "C:\Users\enio\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+          └ Exception('Unexpected error')
+
+Exception: Unexpected error

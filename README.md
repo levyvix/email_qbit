@@ -9,49 +9,71 @@ This project automatically sends an email notification when a torrent download c
 - Secure email sending using Gmail's SMTP server
 - Simple setup and configuration
 - Environment-based configuration for better security
+- Detailed logging for monitoring and debugging
+- Object-oriented design for better maintainability
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.9 or higher
+- UV (Python package manager) - [Installation Guide](https://github.com/astral-sh/uv)
 - QBitTorrent
 - A Gmail account with App Password enabled
 
 ## Setup
 
 1. Clone this repository to your local machine
-2. Create a virtual environment and activate it:
+2. Install UV if you haven't already:
    ```bash
-   python -m venv .venv
-   .venv\Scripts\activate  # On Windows
+   pip install uv
    ```
-3. Install dependencies:
+3. Create virtual environment and install dependencies in one step:
    ```bash
-   pip install -e .
+   uv sync
    ```
 4. Create your environment configuration:
    ```bash
    cp .env.example .env
    ```
 5. Edit the `.env` file with your credentials:
-   - `SENDER`: Your Gmail address
-   - `PASSWORD`: Your Gmail App Password
-   - `RECEIVER`: The email address where you want to receive notifications
+   ```env
+   SENDER = "your_email@gmail.com"
+   PASSWORD = "your_app_password"
+   RECEIVER = "recipient_email@example.com"
+   ```
 
 ## Configuration
 
-1. Open `main.py` and modify the following variables:
-   - `remetente`: Your Gmail address
-   - `senha_app`: Your Gmail App Password
-   - `destinatario`: The email address where you want to receive notifications
-
-2. In QBitTorrent:
-   - Go to Tools > Options > Downloads
-   - Under "Run external program on torrent completion", enter:
-     ```
-     python path\to\main.py "%N"
-     ```
-   - Replace `path\to\main.py` with the actual path to your `main.py` file
+In QBitTorrent:
+1. Go to Tools > Options > Downloads
+2. Under "Run external program on torrent completion", enter the following command:
+   ```
+   C:\path\to\your\project\.venv\Scripts\python.ex C:\path\to\your\project\main.py "%N"
+   ```
+   Replace:
+   - `C:\path\to\your\project` with the actual path where you cloned the repository
    - `%N` is a QBitTorrent variable that passes the torrent name
+
+For example, if you cloned the repository to `C:\Users\YourUsername\Desktop\email_qbit`, the command would be:
+```
+C:\Users\YourUsername\Desktop\email_qbit\.venv\Scripts\python.exe C:\Users\YourUsername\Desktop\email_qbit\main.py "%N"
+```
+
+## Project Structure
+
+The project is organized in an object-oriented manner:
+
+- `QBittorrentEmailSender` class: Handles all email-related functionality
+  - Constructor loads environment variables
+  - `send_email()` method sends the notification
+  - Includes logging for monitoring and debugging
+
+## Logging
+
+The application includes detailed logging that will help you monitor and debug:
+- Logs when an email is being sent
+- Logs the recipient and subject of each email
+- Confirms successful email delivery
+- Logs any errors that might occur during the process
 
 ## Security Note
 
@@ -64,15 +86,20 @@ This project automatically sends an email notification when a torrent download c
 
 1. When a torrent download completes, QBitTorrent executes the Python script
 2. The script receives the torrent name as a command-line argument
-3. It creates an email with the download completion notification
-4. The email is sent using Gmail's SMTP server
+3. The `QBittorrentEmailSender` class is instantiated and loads the configuration
+4. The `send_email()` method creates and sends the notification email
 5. You receive the notification at your specified email address
+6. The process is logged for monitoring and debugging
 
 ## Troubleshooting
 
 - Make sure your Gmail account has "Less secure app access" enabled or use an App Password
-- Verify that the Python path in QBitTorrent is correct
+- Verify that the paths in the QBitTorrent configuration are correct
 - Check that your firewall isn't blocking the SMTP connection
 - Ensure your Gmail account has 2FA enabled if using App Passwords
 - Verify that your `.env` file is properly configured and in the same directory as `main.py`
+- Check the logs for any error messages or issues
+- Ensure all environment variables in `.env` are properly set with the correct values
+- If you encounter any UV-related issues, try updating UV to the latest version
+- If the script doesn't run, verify that both the UV executable and main.py paths are correct
 
